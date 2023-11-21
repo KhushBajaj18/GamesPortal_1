@@ -1,0 +1,29 @@
+.bottom-navigation {
+    background-color: #0d0237;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px; /* Add padding to create spacing */
+    box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.2); /* Add a gradient-like box shadow */
+  }
+  
+  .nav-button {
+    flex: 1;
+    padding: 16px; /* Increase padding for better spacing */
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: opacity 0.3s;
+  }
+  
+  .nav-button:hover {
+    opacity: 0.7;
+  }
+  

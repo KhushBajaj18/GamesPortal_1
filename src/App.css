@@ -1,0 +1,115 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 1rem auto 4rem;
+}
+
+/* Styling for the game section */
+.game--card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 360px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.game--image {
+  width: 100%;
+  height: 24em;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.game--card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.game--card button:hover {
+  opacity: 0.7;
+}
+
+/* Styling for the middle section */
+.middle--image {
+  width: 100%;
+  height: 16em;
+  object-fit: cover;
+}
+
+.middle--card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 280px;
+  margin: auto 1rem;
+  text-align: center;
+  font-family: arial;
+}
+
+.middle--card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.middle--card button:hover {
+  opacity: 0.7;
+}
+
+/* Styling for the divider */
+.game-middle-divider {
+  border-bottom: 2px solid #ccc; /* You can adjust the color and size of the divider */
+  margin: 2rem 0; /* Adjust the margin to control the space between sections */
+}
+
+
+
+
+
+
+.end--image {
+  width: 100%;
+  height: 16em;
+  object-fit: cover;
+}
+
+.end--card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 280px;
+  margin: auto 1rem;
+  text-align: center;
+  font-family: arial;
+}
+
+.end--card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.end--card button:hover {
+  opacity: 0.7;
+}

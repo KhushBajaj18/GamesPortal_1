@@ -1,0 +1,89 @@
+.nav-bar {
+    background-color: #0d0237;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+
+  }
+  
+  .nav-button {
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: opacity 0.3s;
+  }
+  
+  .nav-button:hover {
+    opacity: 0.7;
+  }
+  
+  .nav-title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .white-text {
+    color: white;
+  }
+  
+  .yellow-text {
+    color: yellow;
+  }
+  
+
+
+  /* Define button styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1e3c72; /* Near-dark blue background color */
+  color: #ffffff; /* Text color (white) */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Add a subtle hover effect to the button */
+.button:hover {
+  background-color: #003f87; /* Darker blue on hover */
+}
+
+/* Style the button text and add a subtle shadow */
+.button span {
+  display: inline-block;
+  position: relative;
+  padding: 5px 10px;
+}
+
+/* Create a pseudo-element for the gradient effect */
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #0d2257, #002f62); /* Gradient effect */
+  border-radius: 5px; /* Match button's border-radius */
+  z-index: -1; /* Place behind the text */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Add a gradient overlay on hover */
+.button:hover::before {
+  opacity: 1;
+}
+
+
+* {
+  box-sizing: border-box;
+}
