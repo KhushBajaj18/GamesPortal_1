@@ -7,10 +7,13 @@ import Middle from './Components/Middle';
 import End from './Components/End';
 import BottomNavigation from './Components/BottomNavigation';
 import NavigationBar from './Components/NavigationBar';
+import "react-multi-carousel/lib/styles.css";
+
 
 
 import './App.css';
 import { responsive } from './Components/data'; 
+import { responsive2 } from './Components/data'; 
 
 function HomePage() {
   const [gameData, setGameData] = useState([]);
@@ -51,33 +54,46 @@ function HomePage() {
     <div className="App">
       <NavigationBar />
 
+      <div className='h-16 w-full'></div>
       {/* Carousel for Products */}
-      <Carousel showDots={false} responsive={responsive}>
+      <div className='text-yellow-300 flex w-full font-bold mb-4 text-3xl'></div>
+      <Carousel className='bg-slate-900' showDots={false} responsive={responsive}>
         {gameData.map((game) => (
-          <Product key={game.id} name={game.bannerImageTitle} gameurl={game.gameurl} imageUrl={game.imageUrl} />
+          <Product key={game.id} gameurl={game.gameurl} imageUrl={game.imageUrl} />
         ))}
       </Carousel>
-
-      <Carousel showDots={false} responsive={responsive}>
+      <div className='h-24 w-full'></div>
+      <div className='bg-slate-800 rounded-xl max-w-full md:p-8'>
+      <div className='text-yellow-300 flex w-full font-bold mb-4 text-3xl'>Action games 🔫</div>
+      <Carousel  responsive={responsive2} autoPlay={true} autoPlaySpeed={4000} >
         {gameDataMiddle.map((game) => (
            <Product key={game.id} name={game.title} gameurl={game.gameurl} imageUrl={game.previewImageUrl} />
         ))}
+        
       </Carousel>
-
+      </div>
+      <div className='h-24 w-full'></div>
+      <div className='bg-slate-800 rounded-xl max-w-full md:p-8'>
       {/* Carousel for End Section */}
-      <Carousel showDots={false} responsive={responsive}>
+      <div className='text-yellow-300 flex w-full font-bold mb-4 text-3xl'>Sports games ⚽️</div>
+      <Carousel responsive={responsive2} autoPlay={true} autoPlaySpeed={4000}>
         {gameDataEnd.map((game) => (
           <Product key={game.id} name={game.title} gameurl={game.gameurl} imageUrl={game.previewImageUrl} />
         ))}
       </Carousel>
-
-      <Carousel showDots={false} responsive={responsive}>
+      </div>
+      <div className='h-24 w-full'></div>
+      <div className='bg-slate-800 rounded-xl max-w-full md:p-8'>
+      <div className='text-yellow-300 flex w-full font-bold mb-4 text-3xl'>Casual games 🤡</div>
+      <Carousel responsive={responsive2} autoPlay={true} autoPlaySpeed={4000}>
         {gameDataEndLast.map((game) => (
           <Product key={game.id} name={game.title} gameurl={game.gameurl} imageUrl={game.previewImageUrl} />
         ))}
       </Carousel>
+      </div>
+      <div className='h-24 w-full'></div>
 
-      <BottomNavigation />
+      {/* <BottomNavigation /> */}
     </div>
   );
 }

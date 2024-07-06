@@ -6,8 +6,9 @@ export const responsive = {
       slidesToSlide: 1,
     },
     desktop: {
-      breakpoint: { max: 1024, min: 800 },
-      items: 4,
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 1 // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 800, min: 464 },
@@ -18,6 +19,29 @@ export const responsive = {
       items: 1,
     },
   };
+
+  export const responsive2 = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 1024 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 5,
+      slidesToSlide: 1 // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 800, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
   
   export const productData = [
     {

@@ -7,7 +7,7 @@ import BottomNavigation from "./Components/BottomNavigation";
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden">
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />

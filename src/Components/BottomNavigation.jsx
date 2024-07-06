@@ -5,14 +5,12 @@ import './BottomNavigation.css';
 
 function BottomNavigation() {
   return (
-    <div className="bottom-navigation">
+    <div className="bottom-navigation bg-slate-800">
       
-      <button className="nav-button"><Link to="/">🏠 Home</Link> </button>
-      <button className="nav-button"><Link to="/premium">🎮 Premium Games</Link></button>
-      <button className="nav-button"><Link to="/popular">🌟 Popular Games</Link></button>
-      <button className="nav-button">
-        📤 Share
-      </button>
+      <button className="nav-button"><Link to="/">🏠 <br /> Home</Link> </button>
+      <button className="nav-button"><Link to="/premium">🎮 <br /> Premium Games</Link></button>
+      <button className="nav-button"><Link to="/popular">🌟 <br /> Popular Games</Link></button>
+      <button className="nav-button">📤 <br /> Share</button>
     </div>
   );
 }

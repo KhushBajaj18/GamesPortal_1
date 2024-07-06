@@ -1,12 +1,11 @@
 .bottom-navigation {
-    background-color: #0d0237;
     display: flex;
     justify-content: space-between;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 8px; /* Add padding to create spacing */
+    padding: 8px; 
     box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.2); /* Add a gradient-like box shadow */
   }
   

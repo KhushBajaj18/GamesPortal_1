@@ -8,7 +8,7 @@ function NavigationBar() {
   const { loginWithRedirect, isAuthenticated } = useAuth0();
 
   return (
-    <div className="nav-bar">
+    <div className="nav-bar border-b-4 border-yellow-400 w-screen absolute top-0 left-0 px-10 pb-3">
       {
         isAuthenticated ? (<button  className="button" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Log Out</button>)
         :
@@ -20,12 +20,11 @@ function NavigationBar() {
       }
     
 
-      <div className="nav-title">
+      <div className="nav-title text-3xl">
         <span className="white-text">GAME</span>
         <span className="yellow-text">ZONE</span>
       </div>
       <div className="nav-right">
-        🔔
       </div>
     </div>
   );

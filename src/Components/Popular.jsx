@@ -39,9 +39,11 @@ function Popular() {
       <NavigationBar />
 
       {/* Carousel for Products */}
+      <div className='flex flex-wrap gap-7'>
         {gameData.map((game) => (
           <Product key={game.id} name={game.title} gameurl={game.gameurl} imageUrl={game.previewImageUrl} />
         ))}
+        </div>
       
 
   
