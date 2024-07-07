@@ -6,4 +6,4 @@ but wait, you still won’t see the games — you’ll just see the ui. to see t
 i know it’s a lot of work, but hey, i got the api keys and gave you free games. so just two minutes of work for a lifetime of game enjoyment. sounds like a good deal to me!
 
 Script: open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security
-This is my Portal(Main objective of this is to enable you to play free games for life)
+
